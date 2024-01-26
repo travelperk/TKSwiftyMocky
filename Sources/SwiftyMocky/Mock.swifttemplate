@@ -37,14 +37,13 @@ func stringArray(fromArguments arguments: [String: Any], forKey key: String) -> 
     }
 }
 _%>
-// Generated with SwiftyMocky 4.2.0
-// Required Sourcery: 1.8.0
+// Generated with TKSwiftyMocky 4.2.1
 
 <%_ for rule in swiftLintRules(argument) { -%>
     <%_ %><%= rule %>
 <%_ } -%>
 
-import SwiftyMocky
+import TKUnitTestingTools
 import XCTest
 <%# ================================================== IMPORTS -%><%_ -%>
     <%_ for projectImport in projectImports(argument) { -%>
